@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stara</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body style="background-color: black;">
+    <nav
+      class="navbar navbar-dark bg-dark"
+      style="background-color: black !important;padding: 30px;"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./assets/stara_logo.png" height="60" alt="" />
+        </a>
+        <div style="margin: 0 auto;">
+          <div
+            class="input-group mb-2 mr-sm-2 search"
+            style="width:600px;max-width: 700px;"
+          >
+            <input
+              style="border-top-left-radius:25px;border-bottom-left-radius:25px;background-color: #671C43;border-color: #671C43;color: white;padding-top: 25px;padding-bottom: 25px;padding-left: 40px;"
+              type="text"
+              class="form-control"
+              id="inlineFormInputGroupUsername2"
+              placeholder="Cari Pertanyaan Imanmu Disini"
+            />
+            <div
+              class="input-group-append btn-search"
+              style="background-color: #671C43;border-color: #671C43;color: white;border-top-right-radius:25px;border-bottom-right-radius:25px;"
+            >
+              <button
+                class="btn"
+                style="border: none;"
+                type="button"
+                id="button-addon2"
+              >
+                <i class="fa fa-search fa-lg" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div
+          class="col-sm-3"
+          style="height: 100vh;background-color: #636E97;text-align: center;padding: 0;border-top-left-radius: 5px;"
+        >
+          <div
+            style="padding: 10px; background-color: #8C75B6;border-top-left-radius: 5px;"
+          >
+            <button
+              type="button"
+              class="btn btn-secondary btn-block"
+              style="background-color: #28033F;"
+            >
+              <i
+                class="fa fa-user-circle-o"
+                aria-hidden="true"
+                style="margin-right: 15px;"
+              ></i>
+
+              Login / Sign Up
+            </button>
+          </div>
+          <div>
+            <div
+              class="nav flex-column nav-pills"
+              id="v-pills-tab"
+              role="tablist"
+              aria-orientation="vertical"
+            >
+              <a
+                class="nav-link active"
+                id="v-pills-home-tab"
+                data-toggle="pill"
+                href="#v-pills-home"
+                role="tab"
+                aria-controls="v-pills-home"
+                aria-selected="true"
+                ><i
+                  class="fa fa-circle"
+                  aria-hidden="true"
+                  style="color: #F4ED0A;"
+                ></i>
+                Serba Serbi</a
+              >
+
+              <a
+                class="nav-link"
+                id="v-pills-profile-tab"
+                data-toggle="pill"
+                href="#v-pills-profile"
+                role="tab"
+                aria-controls="v-pills-profile"
+                aria-selected="false"
+              >
+                <i
+                  class="fa fa-circle"
+                  aria-hidden="true"
+                  style="color: #A5DDEE;"
+                ></i>
+                Asal Muasal</a
+              >
+              <a
+                class="nav-link"
+                id="v-pills-profile-tab"
+                data-toggle="pill"
+                href="#v-pills-profile"
+                role="tab"
+                aria-controls="v-pills-profile"
+                aria-selected="false"
+              >
+                <i
+                  class="fa fa-circle"
+                  aria-hidden="true"
+                  style="color: #F2799E;"
+                ></i>
+                Perjalanan</a
+              >
+
+              <a
+                class="nav-link"
+                id="v-pills-profile-tab"
+                data-toggle="pill"
+                href="#v-pills-profile"
+                role="tab"
+                aria-controls="v-pills-profile"
+                aria-selected="false"
+              >
+                <i
+                  class="fa fa-circle"
+                  aria-hidden="true"
+                  style="color: #ED1559;"
+                ></i>
+
+                Testimonial</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-9" style="padding-left: 0;">
+          <section style="background-color: white;padding: 20px;height: 100%;">
+            <div class="row">
+              <div class="col-sm-6" style="padding:50px;">
+                <div>
+                  <div>Belum punya akun ?</div>
+                  <h4>Ayo Daftar !</h4>
+                  <input
+                    type="email"
+                    class="form-control input-round"
+                    placeholder="email"
+                    aria-describedby="email"
+                  />
+                  <button
+                    style="margin:10px 0"
+                    type="button"
+                    class="btn btn-dark btn-sm"
+                  >
+                    Daftar
+                  </button>
+
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-block btn-round"
+                    style="background-color: #F34A39;border: none;font-size: 14px;padding: 15px 0;"
+                  >
+                    <i
+                      style="color: #BC3026;margin-right: 20px;font-size: 28px;"
+                      class="fa fa-google-plus fa-lg"
+                      aria-hidden="true"
+                    ></i>
+                    Koneksi dengan Google+
+                  </button>
+
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-block btn-round"
+                    style="background-color: #507CC0;border: none;font-size: 14px;padding: 15px 0;"
+                  >
+                    <i
+                      style="color: #385C8F;margin-right: 20px;font-size: 28px"
+                      class="fa fa-facebook fa-lg"
+                      aria-hidden="true"
+                    ></i>
+                    Koneksi dengan Facebook
+                  </button>
+                </div>
+              </div>
+              <div class="col-sm-6" style="padding:50px;">
+                <div>
+                  <div>Masukkan ID dan Password yang terdaftar</div>
+                  <h4>Aku Punya :)</h4>
+                  <input
+                    type="email"
+                    class="form-control input-round"
+                    placeholder="email"
+                    aria-describedby="email"
+                    style="margin-bottom: 10px;"
+                  />
+                  <input
+                    type="password"
+                    class="form-control input-round"
+                    placeholder="password"
+                    aria-describedby="password"
+                    style="margin-bottom: 10px;"
+                  />
+                  <div class="form-group form-check" style="font-size: 14px;">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="exampleCheck1"
+                    />
+                    <label class="form-check-label" for="exampleCheck1"
+                      >Ingat saya</label
+                    >
+                    <a style="display: block;" href="#">Lupa password ?</a>
+                  </div>
+                  
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    style="margin:10px 0;background-color: #636E97;"
+                  >
+                    Masuk
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

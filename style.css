@@ -1,0 +1,85 @@
+.primary-color {
+  color: #28033f;
+}
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #eaeaea !important;
+  opacity: 1; /* Firefox */
+}
+
+.search > input {
+  font-size: 12px !important;
+}
+
+.btn-search {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.btn-search > .btn {
+  color: white;
+}
+
+.btn-search :hover {
+  background-color: transparent !important;
+  border: none;
+  color: #9f005d;
+}
+
+.btn-search :focus {
+  border: none;
+  box-shadow: none;
+}
+
+.btn-round {
+  border-radius: 30px;
+}
+
+.btn-add-question {
+  border: none;
+}
+
+.btn-add-question:active,
+.btn-add-question:focus {
+  border: none;
+  box-shadow: none;
+}
+
+.input-round {
+  border-radius: 30px;
+}
+
+.nav-pills > a {
+  color: #fff;
+  border-radius: 0px !important;
+  border-bottom: 1px solid #ffffff47;
+  padding: 1rem 1rem;
+  text-align: left;
+}
+.nav-pills > a > i {
+  margin: 0px 20px;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #28033f;
+  background-color: #ffffff;
+}
+.question {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.question > div {
+  background-color: #eaeaea;
+  border-radius: 5px;
+  margin-right: 20px;
+  padding: 15px;
+  max-width: 380px;
+  /* min-width: 200px; */
+  width: 100%;
+}
+
+.dropdown-item > i {
+  margin-right: 20px;
+}

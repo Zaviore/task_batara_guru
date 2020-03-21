@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stara</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="//cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet" />
+    <link href="//cdn.quilljs.com/1.3.6/quill.bubble.css" rel="stylesheet" />
+    <script src="//cdn.quilljs.com/1.3.6/quill.min.js"></script>
+  </head>
+  <body style="background-color: black;">
+    <nav
+      class="navbar navbar-dark bg-dark"
+      style="background-color: black !important;padding: 30px;"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./assets/stara_logo.png" height="60" alt="" />
+        </a>
+
+        <div
+          class="input-group mb-2 mr-sm-2 search"
+          style="width:600px;max-width: 700px;"
+        >
+          <input
+            style="border-top-left-radius:25px;border-bottom-left-radius:25px;background-color: #671C43;border-color: #671C43;color: white;padding-top: 25px;padding-bottom: 25px;padding-left: 40px;"
+            type="text"
+            class="form-control"
+            id="inlineFormInputGroupUsername2"
+            placeholder="Cari Pertanyaan Imanmu Disini"
+          />
+          <div
+            class="input-group-append btn-search"
+            style="background-color: #671C43;border-color: #671C43;color: white;border-top-right-radius:25px;border-bottom-right-radius:25px;"
+          >
+            <button
+              class="btn"
+              style="border: none;"
+              type="button"
+              id="button-addon2"
+            >
+              <i class="fa fa-search fa-lg" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+
+        <div style="display: flex;align-items: center;">
+          <div style="color: white;margin-right: 10px;">Hi, Albert !</div>
+          <div><img style="max-width: 50px;" src="./assets/user2.jpg" /></div>
+          <div
+            style="background-color: #671C43;color: white;height: 50px;width: 50px;display: flex;align-items: center;justify-content: center;"
+          >
+            <i class="fa fa-bell-o fa-2x" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div
+          class="col-sm-3"
+          style="height: 100vh;background-color: #636E97;text-align: center;padding: 0;border-top-left-radius: 5px;"
+        >
+          <div
+            style="padding: 10px; background-color: #8C75B6;border-top-left-radius: 5px;"
+          >
+            <button
+              type="button"
+              class="btn btn-secondary btn-block"
+              style="background-color: #28033F;"
+            >
+              <i
+                class="fa fa-plus"
+                aria-hidden="true"
+                style="margin-right: 15px;"
+              ></i>
+
+              Pertanyaan Baru
+            </button>
+          </div>
+          <div>
+            <div
+              class="nav flex-column nav-pills"
+              id="v-pills-tab"
+              role="tablist"
+              aria-orientation="vertical"
+            >
+              <a
+                class="nav-link active"
+                id="v-pills-home-tab"
+                data-toggle="pill"
+                href="#v-pills-home"
+                role="tab"
+                aria-controls="v-pills-home"
+                aria-selected="true"
+                ><i
+                  class="fa fa-circle"
+                  aria-hidden="true"
+                  style="color: #F4ED0A;"
+                ></i>
+                Serba Serbi</a
+              >
+
+              <a
+                class="nav-link"
+                id="v-pills-profile-tab"
+                data-toggle="pill"
+                href="#v-pills-profile"
+                role="tab"
+                aria-controls="v-pills-profile"
+                aria-selected="false"
+              >
+                <i
+                  class="fa fa-circle"
+                  aria-hidden="true"
+                  style="color: #A5DDEE;"
+                ></i>
+                Asal Muasal</a
+              >
+              <a
+                class="nav-link"
+                id="v-pills-profile-tab"
+                data-toggle="pill"
+                href="#v-pills-profile"
+                role="tab"
+                aria-controls="v-pills-profile"
+                aria-selected="false"
+              >
+                <i
+                  class="fa fa-circle"
+                  aria-hidden="true"
+                  style="color: #F2799E;"
+                ></i>
+                Perjalanan</a
+              >
+
+              <a
+                class="nav-link"
+                id="v-pills-profile-tab"
+                data-toggle="pill"
+                href="#v-pills-profile"
+                role="tab"
+                aria-controls="v-pills-profile"
+                aria-selected="false"
+              >
+                <i
+                  class="fa fa-circle"
+                  aria-hidden="true"
+                  style="color: #ED1559;"
+                ></i>
+
+                Testimonial</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-9" style="padding-left: 0;">
+          <div
+            style="background-color: #D1D2D3;margin-top: 0px;padding: 10px;border-top-right-radius: 5px;display: flex;align-items: center;"
+          >
+            <button type="button" class="btn btn-round">
+              <i class="fa fa-arrow-left fa-lg" aria-hidden="true"></i>
+            </button>
+            <div style="font-size: 14px;flex-grow: 1;">
+              Pertanyan yang diajukan - Serba-serbi
+            </div>
+            <div class="primary-color">
+              Kemaren, 1 Des
+            </div>
+            <button
+              type="button"
+              class="btn btn-primary"
+              style="background-color: #636E97;padding: 2px 20px;margin:0 10px;"
+            >
+              Follow
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              style="border-radius: 20px; background-color: #0677E9;padding: 2px 10px;margin:0 10px;border:none"
+            >
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              style="border-radius: 20px; background-color: #1DA1F2;padding: 2px 7px;margin:0 10px;border:none"
+            >
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </button>
+
+            <button
+              type="button"
+              class="btn btn-primary"
+              style="border-radius: 20px; background-color: transparent;padding: 2px 7px;margin:0 10px;border:none;color: gray;"
+            >
+              <i
+                class="fa fa-share-square"
+                style="font-size: 28px;"
+                aria-hidden="true"
+              ></i>
+            </button>
+          </div>
+          <section style="background-color: white;padding: 20px;height: 100%;">
+            <!-- LIST QUESTIONS -->
+            <div>
+              <h1 style="font-size: 20px;">
+                What Do Other Southeast Asians think about Indonesia?
+              </h1>
+              <div style="margin-bottom: 20px;display: flex;">
+                <div style="flex-grow: 1;">
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    style="background-color:#28033F;"
+                  >
+                    Kirim Jawaban
+                  </button>
+                </div>
+                <div style="margin-right: 30px;">Bagikan ke</div>
+                <div style="margin-right: 20px;">
+                  <input
+                    checked
+                    type="checkbox"
+                    class="form-check-input"
+                    id="exampleCheck1"
+                    style="margin-right: 5px;"
+                  />
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    style="border-radius: 20px; background-color: #0677E9;padding: 2px 10px;margin-right: 5px;border:none"
+                  >
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                  </button>
+                </div>
+                <div>
+                  <input
+                    checked
+                    type="checkbox"
+                    class="form-check-input"
+                    id="exampleCheck1"
+                    style="margin-right: 20px;"
+                  />
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    style="border-radius: 20px; background-color: #1DA1F2;padding: 2px 7px;margin-right: 5px;border:none"
+                  >
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
+
+              <div class="card">
+                <div
+                  class="card-header"
+                  style="display: flex;align-items: center;"
+                >
+                  <div style="margin-right: 10px;">
+                    <img
+                      style="border-radius: 20px;width: 40px;"
+                      src="./assets/user1.jpg"
+                    />
+                  </div>
+                  <div style="flex-grow: 1;">Albert Tanjung</div>
+                  <div class="form-group form-check" style="margin:5px">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="exampleCheck1"
+                      checked
+                    />
+                    <div
+                      class="form-check-label"
+                      for="exampleCheck1"
+                      style="font-size: 14px;width: 100%;display: inline-block;
+                      white-space: nowrap;"
+                    >
+                      Sebagai seseorang yang tidak diketahui
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body" style="padding:0;">
+                  <div id="editor"></div>
+                </div>
+              </div>
+            </div>
+            <hr />
+
+            <div>
+              <h1 style="font-size: 20px;">
+                What Do Other Southeast Asians think about Indonesia?
+              </h1>
+              <div style="margin-bottom: 20px;">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  style="background-color:#28033F ;"
+                >
+                  Bantu Jawab
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  style="background-color: #636E97;"
+                >
+                  Kurang Popularitas
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-light"
+                  style="background-color: transparent;border: none;"
+                >
+                  Lebih <i class="fa fa-plus" aria-hidden="true"></i>
+                </button>
+              </div>
+              <div style="font-size: 14px;display: flex;">
+                <img
+                  style="margin-right: 5px;max-width: 35px;width: 100%;min-width: 30px;border-radius: 5px;"
+                  src="./assets/user1.jpg"
+                />
+                <div>
+                  <div>Avelino Tresno, Bakat itu terpendam</div>
+                  <div><b>Tertulis di 20 Oktober 2017</b></div>
+                </div>
+              </div>
+              <p style="font-size: 12px;padding: 10px 0;">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged. It was
+                popularised in the 1960s with the release of Letraset sheets
+                containing Lorem Ipsum passages, and more recently with desktop
+                publishing software like Aldus PageMaker including versions of
+                Lorem Ipsum.
+              </p>
+              <div
+                style="display: flex;color: gray;font-size: 14px;align-items: center;"
+              >
+                <div style="flex-grow: 1;">
+                  <button
+                    type="button"
+                    class="btn btn-round"
+                    style="color: gray;font-size: 14px;margin-left: -15px;"
+                  >
+                    Berbagi
+                    <i class="fa fa-share-alt" aria-hidden="true"></i>
+                  </button>
+                </div>
+                <button
+                  type="button"
+                  class="btn btn-round "
+                  style="color: gray;font-size: 14px;"
+                >
+                  7.7 Terbaca
+                </button>
+                <div>|</div>
+                <button
+                  type="button"
+                  class="btn btn-round "
+                  style="color: gray;font-size: 14px;"
+                >
+                  Lihat Daftar Mosi
+                </button>
+                <div>|</div>
+                <button
+                  type="button"
+                  class="btn btn-round "
+                  style="color: gray;font-size: 14px;"
+                >
+                  Komentar
+                  <span
+                    style="background-color:gainsboro; border-radius: 2.5px;padding: 2.5px;color: gray;"
+                    >4+</span
+                  >
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-primary btn-round"
+                  style="margin-right:10px;background-color:#671C43;font-size: 14px;"
+                >
+                  Kurangi Mosi
+                  <i class="fa fa-thumbs-o-down" aria-hidden="true"></i>
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-primary btn-round"
+                  style="background-color:#636E97; font-size: 14px;"
+                >
+                  Tambah Mosi
+                  <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+            <hr />
+            <!-- ENDLIST QUESTIONS -->
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      (function() {
+        var quill = new Quill("#editor", {
+          theme: "snow"
+        });
+      })();
+    </script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    ]
+  </body>
+</html>

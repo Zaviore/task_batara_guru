@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stara</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body style="background-color: black;">
+    <nav
+      class="navbar navbar-dark bg-dark"
+      style="background-color: black !important;padding: 30px;"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./assets/stara_logo.png" height="60" alt="" />
+        </a>
+        <div style="margin: 0 auto;">
+          <div
+            class="input-group mb-2 mr-sm-2 search"
+            style="width:600px;max-width: 700px;"
+          >
+            <input
+              style="border-top-left-radius:25px;border-bottom-left-radius:25px;background-color: #671C43;border-color: #671C43;color: white;padding-top: 25px;padding-bottom: 25px;padding-left: 40px;"
+              type="text"
+              class="form-control"
+              id="inlineFormInputGroupUsername2"
+              placeholder="Cari Pertanyaan Imanmu Disini"
+            />
+            <div
+              class="input-group-append btn-search"
+              style="background-color: #671C43;border-color: #671C43;color: white;border-top-right-radius:25px;border-bottom-right-radius:25px;"
+            >
+              <button
+                class="btn"
+                style="border: none;"
+                type="button"
+                id="button-addon2"
+              >
+                <i class="fa fa-search fa-lg" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div
+          class="col-sm-3"
+          style="height: 100vh;background-color: #636E97;text-align: center;padding: 0;border-top-left-radius: 5px;"
+        >
+          <div
+            style="padding: 10px; background-color: #8C75B6;border-top-left-radius: 5px;"
+          >
+            <button
+              type="button"
+              class="btn btn-secondary btn-block"
+              style="background-color: #28033F;"
+            >
+              <i
+                class="fa fa-user-circle-o"
+                aria-hidden="true"
+                style="margin-right: 15px;"
+              ></i>
+
+              Login / Sign Up
+            </button>
+          </div>
+          <div>
+            <div
+              class="nav flex-column nav-pills"
+              id="v-pills-tab"
+              role="tablist"
+              aria-orientation="vertical"
+            >
+              <a
+                class="nav-link active"
+                id="v-pills-home-tab"
+                data-toggle="pill"
+                href="#v-pills-home"
+                role="tab"
+                aria-controls="v-pills-home"
+                aria-selected="true"
+                ><i
+                  class="fa fa-circle"
+                  aria-hidden="true"
+                  style="color: #F4ED0A;"
+                ></i>
+                Serba Serbi</a
+              >
+
+              <a
+                class="nav-link"
+                id="v-pills-profile-tab"
+                data-toggle="pill"
+                href="#v-pills-profile"
+                role="tab"
+                aria-controls="v-pills-profile"
+                aria-selected="false"
+              >
+                <i
+                  class="fa fa-circle"
+                  aria-hidden="true"
+                  style="color: #A5DDEE;"
+                ></i>
+                Asal Muasal</a
+              >
+              <a
+                class="nav-link"
+                id="v-pills-profile-tab"
+                data-toggle="pill"
+                href="#v-pills-profile"
+                role="tab"
+                aria-controls="v-pills-profile"
+                aria-selected="false"
+              >
+                <i
+                  class="fa fa-circle"
+                  aria-hidden="true"
+                  style="color: #F2799E;"
+                ></i>
+                Perjalanan</a
+              >
+
+              <a
+                class="nav-link"
+                id="v-pills-profile-tab"
+                data-toggle="pill"
+                href="#v-pills-profile"
+                role="tab"
+                aria-controls="v-pills-profile"
+                aria-selected="false"
+              >
+                <i
+                  class="fa fa-circle"
+                  aria-hidden="true"
+                  style="color: #ED1559;"
+                ></i>
+
+                Testimonial</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-9" style="padding-left: 0;">
+          <div
+            style="background-color: #D1D2D3;margin-top: 0px;padding: 10px;border-top-right-radius: 5px;"
+          >
+            <button
+              type="button"
+              class="btn btn-round"
+              style=" background-color: #636e97;color: white;"
+            >
+              Pertanyaan Terbaru
+            </button>
+            <button type="button" class="btn btn-round primary-color">
+              Bantu Jawab
+            </button>
+            <button type="button" class="btn btn-round  primary-color">
+              Mengikuti
+            </button>
+          </div>
+          <section style="background-color: white;padding: 5px 20px;height: 100%;">
+            <div style="padding: 10px 0;">
+              <p class="primary-color">
+                <i
+                  class="fa fa-square"
+                  aria-hidden="true"
+                  style="color: #9F005D;"
+                ></i>
+                Sesi Tanya Jawab Langsung yang akan hadir
+              </p>
+            </div>
+            <div
+              style="background-color: #636E97;border-radius: 5px;padding: 20px;display: flex; justify-content: space-between;margin-bottom: 20px;"
+            >
+              <div style="display:flex;">
+                <div>
+                  <img
+                    style="border-radius: 5px;max-width: 70px;min-width: 50px;"
+                    src="./assets/user1.jpg"
+                  />
+                </div>
+                <div style="margin-left:10px;color:white">
+                  <h6>Judith Donath</h6>
+                  <div>Author of the social machine anda former director.</div>
+                  <div style="font-size: 12px;" class="primary-color">
+                    Menjawab langsung dihari selasa pukul 15.00
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="vl" style="border-left: 1px solid white; padding: 5px;"></div> -->
+              <div style="display:flex;">
+                <div>
+                  <img
+                    style="border-radius: 5px;max-width: 70px;min-width: 50px;"
+                    src="./assets/user1.jpg"
+                  />
+                </div>
+                <div style="margin-left:10px;color:rgb(255, 255, 255)">
+                  <h6>Judith Donath</h6>
+                  <div>Author of the social machine anda former director.</div>
+                  <div style="font-size: 12px;" class="primary-color">
+                    <div>Menjawab langsung dihari selasa pukul 15.00 WIB</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="question">
+              <!-- LIST -->
+              <div style="display: flex;margin-top: 10px;">
+                <div>
+                  <div style="display: flex; font-size: 12px;color:#636E97">
+                    <div style="flex-grow: 1;">
+                      Pertanyaan yang diajukan . Serba-serbi
+                    </div>
+                    <div>Kemarin, 1 Des</div>
+                  </div>
+                  <hr />
+                  <div>
+                    <h5 style="font-size: 19px;" class="primary-color">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                      sed do eiusmod
+                    </h5>
+                    <div style="font-size: 10px;color: gray;">
+                      <img
+                        style="margin-right: 5px;max-width: 25px;"
+                        src="./assets/user1.jpg"
+                      />
+                      Avelino Tresno, Bakat itu terpendam
+                    </div>
+                    <p style="font-size: 14px;margin: 10px 0 30px 0;">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam
+                    </p>
+                  </div>
+                  <div
+                    style="background-color: white; display: flex; flex-direction: row-reverse;margin:-15px;padding: 10px 0;border-top-left-radius: 40px;"
+                  >
+                    <button
+                      type="button"
+                      class="btn btn-round"
+                      style=" background-color: #636e97;color: white;font-size: 14px;"
+                    >
+                      Tambah Mosi
+                      <i class="fa fa-thumbs-o-up fa-lg" aria-hidden="true"></i>
+                    </button>
+
+                    <button
+                      type="button"
+                      class="btn btn-round "
+                      style="color: gray;font-size: 14px;"
+                    >
+                      Komentar
+                      <span
+                        style="background-color:gainsboro; border-radius: 2.5px;padding: 2.5px;color: gray;"
+                        >4+</span
+                      >
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-round"
+                      style="color: gray;font-size: 14px;"
+                    >
+                      Berbagi
+                      <i class="fa fa-share-alt" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div style="display: flex;margin-top: 10px;">
+                <div>
+                  <div style="display: flex; font-size: 12px;color:#636E97">
+                    <div style="flex-grow: 1;">
+                      Pertanyaan yang diajukan . Serba-serbi
+                    </div>
+                    <div>Kemarin, 1 Des</div>
+                  </div>
+                  <hr />
+                  <div>
+                    <h5 style="font-size: 19px;" class="primary-color">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                      sed do eiusmod
+                    </h5>
+                    <div style="font-size: 10px;color: gray;">
+                      <img
+                        style="margin-right: 5px;max-width: 25px;"
+                        src="./assets/user1.jpg"
+                      />
+                      Avelino Tresno, Bakat itu terpendam
+                    </div>
+                    <p style="font-size: 14px;margin: 10px 0 30px 0;">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam
+                    </p>
+                  </div>
+                  <div
+                    style="background-color: white; display: flex; flex-direction: row-reverse;margin:-15px;padding: 10px 0;border-top-left-radius: 40px;"
+                  >
+                    <button
+                      type="button"
+                      class="btn btn-round"
+                      style=" background-color: #636e97;color: white;font-size: 14px;"
+                    >
+                      Tambah Mosi
+                      <i class="fa fa-thumbs-o-up fa-lg" aria-hidden="true"></i>
+                    </button>
+
+                    <button
+                      type="button"
+                      class="btn btn-round "
+                      style="color: gray;font-size: 14px;"
+                    >
+                      Komentar
+                      <span
+                        style="background-color:gainsboro; border-radius: 2.5px;padding: 2.5px;color: gray;"
+                        >4+</span
+                      >
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-round"
+                      style="color: gray;font-size: 14px;"
+                    >
+                      Berbagi
+                      <i class="fa fa-share-alt" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- END LIST -->
+            </div>
+          </section>
+
+          <!-- <div class="row" style="background-color: white;margin: 0px;">
+            <div class="col">
+              1 of 2
+            </div>
+            <div class="col">
+              2 of 2
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
