@@ -1,6 +1,10 @@
 .primary-color {
   color: #28033f;
 }
+a,a:hover{
+  text-decoration: none;
+  color: inherit;
+}
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #eaeaea !important;

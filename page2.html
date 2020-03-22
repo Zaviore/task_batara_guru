@@ -22,7 +22,7 @@
       style="background-color: black !important;padding: 30px;"
     >
       <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/page1.html">
           <img src="./assets/stara_logo.png" height="60" alt="" />
         </a>
 
@@ -52,10 +52,47 @@
           </div>
         </div>
 
-        
         <div style="display: flex;align-items: center;">
           <div style="color: white;margin-right: 10px;">Hi, Albert !</div>
-          <div><img style="max-width: 50px;" src="./assets/user2.jpg" /></div>
+          <div class="dropdown">
+            <button
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              style="padding: 0;margin:0"
+            >
+              <img style="max-width: 50px;" src="./assets/user2.jpg" />
+            </button>
+            <div class="dropdown-menu " aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">
+                <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+
+                Profile</a
+              >
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                Messages</a
+              >
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">
+                <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                Stats</a
+              >
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">
+                <i class="fa fa-cog" aria-hidden="true"></i>
+                Settings</a
+              >
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">
+                <i class="fa fa-sign-out" aria-hidden="true"></i>
+                Logout</a
+              >
+            </div>
+          </div>
+
           <div
             style="background-color: #671C43;color: white;height: 50px;width: 50px;display: flex;align-items: center;justify-content: center;"
           >
@@ -74,8 +111,9 @@
           <div
             style="padding: 10px; background-color: #8C75B6;border-top-left-radius: 5px;"
           >
-            <button
-              type="button"
+            <a
+              href="/page5.html"
+              role="button"
               class="btn btn-secondary btn-block"
               style="background-color: #28033F;"
             >
@@ -86,7 +124,7 @@
               ></i>
 
               Pertanyaan Baru
-            </button>
+            </a>
           </div>
           <div>
             <div
@@ -168,13 +206,14 @@
           <div
             style="background-color: #D1D2D3;margin-top: 0px;padding: 10px;border-top-right-radius: 5px;"
           >
-            <button
-              type="button"
+            <a
+              href="#"
+              role="button"
               class="btn btn-round"
               style=" background-color: #636e97;color: white;"
             >
               Pertanyaan Terbaru
-            </button>
+            </a>
             <button type="button" class="btn btn-round primary-color">
               Bantu Jawab
             </button>
@@ -232,63 +271,68 @@
               <!-- LIST -->
               <div style="display: flex;margin-top: 10px;">
                 <div>
-                  <div style="display: flex; font-size: 12px;color:#636E97">
-                    <div style="flex-grow: 1;">
-                      Pertanyaan yang diajukan . Serba-serbi
+                  <a href="/page3.html">
+                    <div style="display: flex; font-size: 12px;color:#636E97">
+                      <div style="flex-grow: 1;">
+                        Pertanyaan yang diajukan . Serba-serbi
+                      </div>
+                      <div>Kemarin, 1 Des</div>
                     </div>
-                    <div>Kemarin, 1 Des</div>
-                  </div>
-                  <hr />
-                  <div>
-                    <h5 style="font-size: 19px;" class="primary-color">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit
-                      sed do eiusmod
-                    </h5>
-                    <div style="font-size: 10px;color: gray;">
-                      <img
-                        style="margin-right: 5px;max-width: 25px;"
-                        src="./assets/user1.jpg"
-                      />
-                      Avelino Tresno, Bakat itu terpendam
+                    <hr />
+                    <div>
+                      <h5 style="font-size: 19px;" class="primary-color">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                        sed do eiusmod
+                      </h5>
+                      <div style="font-size: 10px;color: gray;">
+                        <img
+                          style="margin-right: 5px;max-width: 25px;"
+                          src="./assets/user1.jpg"
+                        />
+                        Avelino Tresno, Bakat itu terpendam
+                      </div>
+                      <p style="font-size: 14px;margin: 10px 0 30px 0;">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam
+                      </p>
                     </div>
-                    <p style="font-size: 14px;margin: 10px 0 30px 0;">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam
-                    </p>
-                  </div>
-                  <div
-                    style="background-color: white; display: flex; flex-direction: row-reverse;margin:-15px;padding: 10px 0;border-top-left-radius: 40px;"
-                  >
-                    <button
-                      type="button"
-                      class="btn btn-round"
-                      style=" background-color: #636e97;color: white;font-size: 14px;"
+                    <div
+                      style="background-color: white; display: flex; flex-direction: row-reverse;margin:-15px;padding: 10px 0;border-top-left-radius: 40px;"
                     >
-                      Tambah Mosi
-                      <i class="fa fa-thumbs-o-up fa-lg" aria-hidden="true"></i>
-                    </button>
-
-                    <button
-                      type="button"
-                      class="btn btn-round "
-                      style="color: gray;font-size: 14px;"
-                    >
-                      Komentar
-                      <span
-                        style="background-color:gainsboro; border-radius: 2.5px;padding: 2.5px;color: gray;"
-                        >4+</span
+                      <button
+                        type="button"
+                        class="btn btn-round"
+                        style=" background-color: #636e97;color: white;font-size: 14px;"
                       >
-                    </button>
-                    <button
-                      type="button"
-                      class="btn btn-round"
-                      style="color: gray;font-size: 14px;"
-                    >
-                      Berbagi
-                      <i class="fa fa-share-alt" aria-hidden="true"></i>
-                    </button>
-                  </div>
+                        Tambah Mosi
+                        <i
+                          class="fa fa-thumbs-o-up fa-lg"
+                          aria-hidden="true"
+                        ></i>
+                      </button>
+
+                      <button
+                        type="button"
+                        class="btn btn-round "
+                        style="color: gray;font-size: 14px;"
+                      >
+                        Komentar
+                        <span
+                          style="background-color:gainsboro; border-radius: 2.5px;padding: 2.5px;color: gray;"
+                          >4+</span
+                        >
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-round"
+                        style="color: gray;font-size: 14px;"
+                      >
+                        Berbagi
+                        <i class="fa fa-share-alt" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                  </a>
                 </div>
               </div>
 

@@ -25,7 +25,7 @@
       style="background-color: black !important;padding: 30px;"
     >
       <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/page1.html">
           <img src="./assets/stara_logo.png" height="60" alt="" />
         </a>
 
@@ -57,7 +57,45 @@
 
         <div style="display: flex;align-items: center;">
           <div style="color: white;margin-right: 10px;">Hi, Albert !</div>
-          <div><img style="max-width: 50px;" src="./assets/user2.jpg" /></div>
+          <div class="dropdown">
+            <button
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              style="padding: 0;margin:0"
+            >
+              <img style="max-width: 50px;" src="./assets/user2.jpg" />
+            </button>
+            <div class="dropdown-menu " aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">
+                <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+
+                Profile</a
+              >
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                Messages</a
+              >
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">
+                <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                Stats</a
+              >
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">
+                <i class="fa fa-cog" aria-hidden="true"></i>
+                Settings</a
+              >
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">
+                <i class="fa fa-sign-out" aria-hidden="true"></i>
+                Logout</a
+              >
+            </div>
+          </div>
+
           <div
             style="background-color: #671C43;color: white;height: 50px;width: 50px;display: flex;align-items: center;justify-content: center;"
           >
@@ -76,8 +114,9 @@
           <div
             style="padding: 10px; background-color: #8C75B6;border-top-left-radius: 5px;"
           >
-            <button
-              type="button"
+            <a
+              href="/page5.html"
+              role="button"
               class="btn btn-secondary btn-block"
               style="background-color: #28033F;"
             >
@@ -88,7 +127,7 @@
               ></i>
 
               Pertanyaan Baru
-            </button>
+            </a>
           </div>
           <div>
             <div
@@ -221,13 +260,14 @@
               </h1>
               <div style="margin-bottom: 20px;display: flex;">
                 <div style="flex-grow: 1;">
-                  <button
-                    type="button"
+                  <a
+                    href="/page3.html"
+                    role="button"
                     class="btn btn-primary"
                     style="background-color:#28033F;"
                   >
                     Kirim Jawaban
-                  </button>
+                  </a>
                 </div>
                 <div style="margin-right: 30px;">Bagikan ke</div>
                 <div style="margin-right: 20px;">
@@ -272,7 +312,7 @@
                   <div style="margin-right: 10px;">
                     <img
                       style="border-radius: 20px;width: 40px;"
-                      src="./assets/user1.jpg"
+                      src="./assets/user2.jpg"
                     />
                   </div>
                   <div style="flex-grow: 1;">Albert Tanjung</div>

@@ -22,7 +22,7 @@
       style="background-color: black !important;padding: 30px;"
     >
       <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/page1.html">
           <img src="./assets/stara_logo.png" height="60" alt="" />
         </a>
 
@@ -52,10 +52,47 @@
           </div>
         </div>
 
-        
         <div style="display: flex;align-items: center;">
           <div style="color: white;margin-right: 10px;">Hi, Albert !</div>
-          <div><img style="max-width: 50px;" src="./assets/user2.jpg" /></div>
+          <div class="dropdown">
+            <button
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              style="padding: 0;margin:0"
+            >
+              <img style="max-width: 50px;" src="./assets/user2.jpg" />
+            </button>
+            <div class="dropdown-menu " aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">
+                <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+
+                Profile</a
+              >
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                Messages</a
+              >
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">
+                <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                Stats</a
+              >
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">
+                <i class="fa fa-cog" aria-hidden="true"></i>
+                Settings</a
+              >
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">
+                <i class="fa fa-sign-out" aria-hidden="true"></i>
+                Logout</a
+              >
+            </div>
+          </div>
+
           <div
             style="background-color: #671C43;color: white;height: 50px;width: 50px;display: flex;align-items: center;justify-content: center;"
           >
@@ -74,19 +111,20 @@
           <div
             style="padding: 10px; background-color: #8C75B6;border-top-left-radius: 5px;"
           >
-            <button
-              type="button"
-              class="btn btn-secondary btn-block"
-              style="background-color: #28033F;"
-            >
-              <i
-                class="fa fa-plus"
-                aria-hidden="true"
-                style="margin-right: 15px;"
-              ></i>
+          <a
+          href="/page5.html"
+          role="button"
+          class="btn btn-secondary btn-block"
+          style="background-color: #28033F;"
+        >
+          <i
+            class="fa fa-plus"
+            aria-hidden="true"
+            style="margin-right: 15px;"
+          ></i>
 
-              Pertanyaan Baru
-            </button>
+          Pertanyaan Baru
+        </a>
           </div>
           <div>
             <div
@@ -168,9 +206,9 @@
           <div
             style="background-color: #D1D2D3;margin-top: 0px;padding: 10px;border-top-right-radius: 5px;display: flex;align-items: center;"
           >
-            <button type="button" class="btn btn-round">
+            <a role="button" href="/page2.html" class="btn btn-round">
               <i class="fa fa-arrow-left fa-lg" aria-hidden="true"></i>
-            </button>
+            </a>
             <div style="font-size: 14px;flex-grow: 1;">
               Pertanyan yang diajukan - Serba-serbi
             </div>
@@ -218,13 +256,14 @@
                 What Do Other Southeast Asians think about Indonesia?
               </h1>
               <div style="margin-bottom: 20px;">
-                <button
-                  type="button"
+                <a
+                  href="/page4.html"
+                  role="button"
                   class="btn btn-primary"
                   style="background-color:#28033F ;"
                 >
                   Bantu Jawab
-                </button>
+                </a>
                 <button
                   type="button"
                   class="btn btn-primary"
@@ -323,39 +362,13 @@
             <hr />
 
             <div>
-              <h1 style="font-size: 20px;">
-                What Do Other Southeast Asians think about Indonesia?
-              </h1>
-              <div style="margin-bottom: 20px;">
-                <button
-                  type="button"
-                  class="btn btn-primary"
-                  style="background-color:#28033F ;"
-                >
-                  Bantu Jawab
-                </button>
-                <button
-                  type="button"
-                  class="btn btn-primary"
-                  style="background-color: #636E97;"
-                >
-                  Kurang Popularitas
-                </button>
-                <button
-                  type="button"
-                  class="btn btn-light"
-                  style="background-color: transparent;border: none;"
-                >
-                  Lebih <i class="fa fa-plus" aria-hidden="true"></i>
-                </button>
-              </div>
               <div style="font-size: 14px;display: flex;">
                 <img
                   style="margin-right: 5px;max-width: 35px;width: 100%;min-width: 30px;border-radius: 5px;"
-                  src="./assets/user1.jpg"
+                  src="./assets/user2.jpg"
                 />
                 <div>
-                  <div>Avelino Tresno, Bakat itu terpendam</div>
+                  <div>Richard Awesome, Things Never happened</div>
                   <div><b>Tertulis di 20 Oktober 2017</b></div>
                 </div>
               </div>
@@ -432,7 +445,6 @@
             <hr />
             <!-- ENDLIST QUESTIONS -->
           </section>
-
         </div>
       </div>
     </div>
